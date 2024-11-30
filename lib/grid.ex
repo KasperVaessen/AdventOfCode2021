@@ -33,7 +33,7 @@ defmodule AdventOfCode.Grid do
 
     data =
       input
-      |> String.split("\n", trim: false)
+      |> String.split(["\n", "\r", "\r\n"], trim: true)
       |> Enum.map(&row_mapper.(&1))
       |> Enum.map(&List.to_tuple/1)
       |> List.to_tuple()
