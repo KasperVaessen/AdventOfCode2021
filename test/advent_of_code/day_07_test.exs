@@ -4,19 +4,18 @@ defmodule AdventOfCode.Day07Test do
   import AdventOfCode.Day07
 
   @input """
+  16,1,2,0,4,2,7,1,2,14
   """
 
-  @tag :skip
   test "part1" do
     result = part1(@input)
 
-    assert result
+    assert result == 37
   end
 
-  @tag :skip
   test "part2" do
     result = part2(@input)
 
-    assert result
+    assert result == 168
   end
 end
